@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="QUANLYBANSACH.MasterPage" %>
+
+<%@ Register Src="~/UC/ucHeader.ascx" TagPrefix="uc1" TagName="ucHeader" %>
+<%@ Register Src="~/UC/ucSlider.ascx" TagPrefix="uc1" TagName="ucSlider" %>
+<%@ Register Src="~/UC/ucLeft.ascx" TagPrefix="uc1" TagName="ucLeft" %>
+<%@ Register Src="~/UC/ucSachMoi.ascx" TagPrefix="uc1" TagName="ucSachMoi" %>
+<%@ Register Src="~/UC/ucRight.ascx" TagPrefix="uc1" TagName="ucRight" %>
+<%@ Register Src="~/UC/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Index</title>
+    <link href="Scripts/CSS/Style1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <uc1:ucHeader runat="server" ID="ucHeader" />
+    <div id="body">
+        <uc1:ucSlider runat="server" ID="ucSlider" />
+        <article>
+            <uc1:ucLeft runat="server" ID="ucLeft" />
+            <form id="form1" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <uc1:ucSachMoi runat="server" ID="ucSachMoi" />
+                    </asp:ContentPlaceHolder>
+            </form>
+            <uc1:ucRight runat="server" ID="ucRight" />
+        </article>
+        <uc1:ucFooter runat="server" ID="ucFooter" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="QUANLYBANSACH.Admin.AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/adminindex.css" />
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <header class="container">
+        <img src="images/Nen_banner.jpg" class="img" />
+        <div class="container-fluid">
+        </div>
+    </header>
+    <div class="body container">
+        <div class="menu">
+            <a class="index" href="#">Trang chủ</a>
+            <p class="index">Quản trị hệ thống</p>
+            <ul>
+                <li><a href="QuanTriVien.aspx">Quản trị viên</a></li>
+            </ul>
+            <p class="index">Quản lý danh mục</p>
+            <ul>
+                <li><a href="NhaXuatBan.aspx">Nhà xuất bản</a></li>
+                <li><a href="ChuDeSach.aspx">Chủ đề sách</a></li>
+                <li><a href="TacGia.aspx">Tác giả</a></li>
+                <li><a href="Sach.aspx">Sách</a></li>
+            </ul>
+            <p class="index">Quản lý khách hàng</p>
+            <ul>
+                <li><a href="KhachHang.aspx">Khách hàng</a></li>
+                <li><a href="#">Đơn đặt hàng</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <form id="form1" runat="server">
+                <div class="container">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+             </form>
+        </div>
+    </div>
+</body>
+</html>

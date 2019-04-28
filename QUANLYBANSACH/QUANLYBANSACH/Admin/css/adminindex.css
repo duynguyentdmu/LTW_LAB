@@ -1,0 +1,52 @@
+.container-fluid{
+    border: 1px solid black;
+    height: 50px;
+    background-color: green;
+}
+.container {
+    height: 195px;
+    padding: 0 0 0;
+}
+.img{
+    width: 100%;
+}
+.body{
+    height: 450px;
+    border: 1px solid black;
+}
+.menu{
+    border: 1px solid black;
+    float: left;
+    width: 20%;
+    padding-left: 15px;
+    height: 450px;
+    background-color: antiquewhite;
+}
+.content{
+    width: 80%;
+    float: left;
+    padding-top:15px;
+}
+.menu .index {
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bold;
+}
+.index:hover{
+    color: brown;
+}
+ul li{
+    list-style-type: none;
+}
+a:hover{
+    color: red;
+}
+.container1{
+    font-size:14px;
+    margin-left:15px;
+    font-family:'Times New Roman';
+    border:solid 1px;
+}
+.table{
+    width:97%!important;
+}
